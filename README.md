@@ -29,5 +29,5 @@ Kluczowe założenia:
 ------------
 
 
-###### Realizacja projektu: język programowania JavaScript/Node.js, IDE: Visual Studio Code
+###### Realizacja projektu: język programowania: Java, IDE: IntelliJ IDEA
 ###### Jarosław Przyjemski, 19254, III SN
