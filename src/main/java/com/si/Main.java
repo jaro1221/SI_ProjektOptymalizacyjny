@@ -10,7 +10,7 @@ import java.util.Random;
 
 public class Main {
 
-    private static final int HS = 10;
+    private static final int HS = 5;
     private static final double maxCarMass = 2340.0;      // kg
     private static final double maxCarCube = 13385572.2;    // cm^3
     public static JSONArray products;
@@ -24,6 +24,7 @@ public class Main {
 
         // MAIN LOOP
         for (int i = 0; i < HS; i++) {
+
             ArrayList<String> vectHM = new ArrayList<>();
             double currCube = 0.0;
             double currMass = 0.0;
@@ -36,18 +37,25 @@ public class Main {
 
                 // avoid duplicates
                 if (!vectHM.contains(prodId)) {
-                    // check cube
+
+                    boolean isValid = true;
+
+                    // get cube & mass
                     double prodCube = (double) prod.get("dl") * (double) prod.get("szer") * (double) prod.get("wys");
-                    if ((currCube + prodCube) > maxCarCube) break;
-                    else currCube = currCube + prodCube;
-
-                    //check mass
                     double prodMass = (double) prod.get("masa");
-                    if ((currMass + prodMass) > maxCarMass) break;
-                    else currMass = currMass + prodMass;
 
-                    // ok, add to solution vector
-                    vectHM.add(prodId);
+                    // check cube & mass
+                    if ((currCube + prodCube) > maxCarCube) isValid = false;
+                    if ((currMass + prodMass) > maxCarMass) isValid = false;
+
+                    if (isValid)
+                    {
+                        currCube = currCube + prodCube;
+                        currMass = currMass + prodMass;
+                        vectHM.add(prodId);
+                    } else break;
+
+
                 }
 
             }
@@ -57,7 +65,6 @@ public class Main {
             vectFP.add(currCube);
             vectFP.add(currMass);
             FP.add(vectFP);
-
         }
         printMatrix();
     }
