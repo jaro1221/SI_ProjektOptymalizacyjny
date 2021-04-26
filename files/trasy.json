@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "trasa": "Olsztyn",
+        "odleglosc": 524
+    },
+    {
+        "id": 2,
+        "trasa": "Siedlce",
+        "odleglosc": 667
+    },
+    {
+        "id": 3,
+        "trasa": "Kielce",
+        "odleglosc": 624
+    },
+    {
+        "id": 4,
+        "trasa": "Opole",
+        "odleglosc": 479
+    },
+    {
+        "id": 5,
+        "trasa": "Zielona Góra",
+        "odleglosc": 220
+    },
+    {
+        "id": 6,
+        "trasa": "Bydgoszcz",
+        "odleglosc": 261
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "nazwa": "Citroen Berlingo II Van",
+        "dl": 180,
+        "szer": 123,
+        "wys": 125,
+        "ladownosc": 727,
+        "cena": 1.05
+    },
+    {
+        "id": 2,
+        "nazwa": "Renault Trafic II Furgon",
+        "dl": 240,
+        "szer": 169,
+        "wys": 128.5,
+        "ladownosc": 1630,
+        "cena": 1.2
+    },
+    {
+        "id": 3,
+        "nazwa": "Peugeot Boxer II Furgon",
+        "dl": 267,
+        "szer": 156.2,
+        "wys": 166.2,
+        "ladownosc": 1850,
+        "cena": 1.25
+    },
+    {
+        "id": 4,
+        "nazwa": "Fiat Ducato III Maxi",
+        "dl": 370.5,
+        "szer": 187,
+        "wys": 193.2,
+        "ladownosc": 2340,
+        "cena": 1.65
+    },
+    {
+        "id": 5,
+        "nazwa": "Fiat Ducato III",
+        "dl": 312,
+        "szer": 165,
+        "wys": 192.3,
+        "ladownosc": 1996,
+        "cena": 1.45
+    },
+    {
+        "id": 6,
+        "nazwa": "Opel Movano III Furgon",
+        "dl": 217.5,
+        "szer": 157.7,
+        "wys": 189.4,
+        "ladownosc": 1487,
+        "cena": 1.25
+    }
+]
