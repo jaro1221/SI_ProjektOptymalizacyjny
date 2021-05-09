@@ -7,15 +7,19 @@ import org.json.simple.parser.JSONParser;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.function.Consumer;
 
 public class Main {
 
-    private static final int HS = 5;
-    private static final double maxCarMass = 2340.0;      // kg
-    private static final double maxCarCube = 13385572.2;    // cm^3
-    public static JSONArray products;
     public static ArrayList<ArrayList<String>> HM;
     public static ArrayList<ArrayList<Double>> FP;
+    private static final int HS = 5;
+
+    //private static final int carId = 5;
+    private static double maxCarMass = 2340.0;   // kg
+    private static double maxCarCube = 370.5 * 187 * 193.2;   // cm^3
+
+    public static JSONArray products;
 
     public static void main(String[] args) {
         HM = new ArrayList<>();
@@ -54,10 +58,7 @@ public class Main {
                         currMass = currMass + prodMass;
                         vectHM.add(prodId);
                     } else break;
-
-
                 }
-
             }
 
             HM.add(vectHM);
