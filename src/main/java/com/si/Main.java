@@ -17,7 +17,7 @@ public class Main {
 
     //private static final int carId = 5;
     private static double maxCarMass = 2340.0;   // kg
-    private static double maxCarCube = 370.5 * 187 * 193.2;   // cm^3
+    private static double maxCarCube = 370.5 * 187 * 193.2;   // cm^3  (13 385 572.2 cm^3 == 13.3855722 m^3)
 
     public static JSONArray products;
 
